@@ -12,7 +12,7 @@ Built from `devpost/design-brief.md` with Snap's CLAD agents (specs-experience-b
 - "Center" makes left and right equal. Both turn green and read "centered" when they match within 0.2 cm.
 - The shop minimum slider (5 to 10 cm, starts at 7.5) recolors the rails without moving the outline.
 - "Lock" freezes the drag and shows "Unlock" in the same place. A pulsing 3 cm marker steps through the 4 corners and then the faucet hole, one step per "Marked". For the oval, the corners are the front, right, back and left points. While tracing, the rail numbers shrink to half size.
-- After the 5th mark, the summary line appears inside the outline, built from the values at lock time ("Front 10.9 cm · Back 12.1 cm · Centered · 5 marks"). A soft chime plays and "New layout" resets.
+- After the 5th mark, the summary line appears inside the outline, built from the values at lock time ("Front 10.8 cm · Back 12.2 cm · Centered · 5 marks"). A soft chime plays and "New layout" resets.
 - When the next corner is out of view, an arrow on the stone points toward it and a tick plays from the corner. Both sounds are WAVs generated locally; no paid API was used.
 
 ## LEAF: 7/7 done criteria and the reach check pass
@@ -41,7 +41,11 @@ dc8 uses the LEAF IK body (shoulder 37 cm below and 20 cm beside the eye, 67.5 c
 - Feel unproven: registration and drift on a real slab, line and number legibility on polished stone under shop lights, and voice for "marked" (it is a button here).
 - The preview panel is docked in a narrow column, so the prints below are crops of the Interactive Preview panel (Sunlit Room, SPECS 27), taken from a camera behind and above the user so the whole slab fits.
 
-## Prints (Interactive Preview, after each LEAF run)
+## Demo video (preview only)
+
+`docs/video/demo.mp4` (2:33, 1080p) is built by `demo_slides.py` from `docs/video/demo.json`: 8 Interactive Preview frames (`docs/video/01-08*.png`, each taken right after the LEAF run that reaches that state, same camera as the prints), narration by the macOS `say` voice, and the LEAF pass list read live from `docs/leaf-run.log`. Nothing in it comes from Spectacles hardware.
+
+## Prints (Interactive Preview, after each LEAF run, on the 60 cm layout)
 
 - `docs/prints/01-start-slab-is-here.png`: start, slab stand-in with "Slab is here"
 - `docs/prints/02-sink-cards.png`: the three sink cards on the back edge
