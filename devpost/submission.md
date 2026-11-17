@@ -16,11 +16,12 @@ I run Stone Project, a marketplace for fabricators' stone remnants, so I spend t
 - Ends with one line on the stone built from the values at lock time, for example "Front 10.8 cm · Back 12.2 cm · Centered · 5 marks".
 
 ## How I built it
-I planned it with the Devpost Learn `plan-lens` skill pack (`devpost/design-brief.md`, 7 done criteria) and built it with Snap's CLAD agents through the Lens Studio MCP: Lens Studio 5.24.1, Spectacles Interaction Kit, UI Kit. The layout math is one pure TypeScript module with an assert-based self-check. Each done criterion has a LEAF scenario that drives the Lens with real SIK input; 7 of 7 pass in the preview, and one was made to fail on purpose first to prove the tests can fail.
+I planned it with the Devpost Learn `plan-lens` skill pack (`devpost/design-brief.md`, 7 done criteria) and built it with Snap's CLAD agents through the Lens Studio MCP: Lens Studio 5.24.1, Spectacles Interaction Kit, UI Kit. The layout math is one pure TypeScript module with an assert-based self-check. Each done criterion has a LEAF scenario that drives the Lens with real SIK input; 7 of 7 pass in the preview, and one was made to fail on purpose first to prove the tests can fail. An eighth scenario drives LEAF's inverse kinematics arm, with no fallback, to every control on the stand edge and pinches each sink card with the hand ray; it passes in the preview.
 
 ## Challenges
 - Keeping every number on the stone and none on a floating panel, without labels colliding with the outline, the dimension lines or the faucet hole.
 - Dragging on a flat surface: the hand ray is projected onto the slab-top plane and clamped, so the outline can never leave the slab.
+- Reach: the IK arm test failed on my first layout. With the slab 80 cm out, even the nearest button was 7.7 cm beyond a standing arm. I moved the slab to 60 cm and pulled Lock and the slider in toward the middle until every control was within reach.
 - The slab is wider than the view at working distance, so the next corner can be out of sight. An arrow on the stone and a tick sound from the corner point to it.
 
 ## What I learned
@@ -31,6 +32,7 @@ Writing the done criteria before building made the tests almost write themselves
 - The slab is a virtual stand-in of 122 x 56 cm. The real version would sense the slab top and outline.
 - The three sink sizes and the 7.5 cm shop minimum are samples, not an industry standard.
 - "Marked" is a button. In a shop it should be voice, because both hands hold tools.
+- The IK arm reaches each near button, but in the preview SIK does not register a touch press from it; the presses are proven with simulated pinches, and the cards with the hand ray.
 
 ## What's next
 Surface detection for a real slab, voice for "marked", and loading the shop's own sink list and rail rule.
