@@ -1,0 +1,71 @@
+- !<AssetImportMetadata/be4d4724-d4bb-4c3c-82fa-11c7103cb021>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 31048fb9-34e7-40fd-bf8f-49454888ef24
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 31048fb9-34e7-40fd-bf8f-49454888ef24
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> b65a76f2-baf3-48c1-9c28-c0eb1b1ddd0f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/b65a76f2-baf3-48c1-9c28-c0eb1b1ddd0f>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 96a1e75b-2f71-4f72-ba49-3a8e3bd4e1d1
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    camera: false
+    cards: false
+    centerTolerance: false
+    controls: false
+    debugLog: false
+    shopMinDefault: false
+    stone: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - controls: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      cards: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      stone: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      shopMinDefault: 7.500000
+      centerTolerance: 0.200000
+      debugLog: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MeasureTwiceController – state and logic</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 controls {"hint":"Stand-edge buttons and shop minimum slider"}'
+    - '// @input AssignableType_2 cards {"hint":"Sink picker cards on the back edge"}'
+    - '// @input AssignableType_3 stone {"hint":"Outline, rails and marks drawn on the stone"}'
+    - '// @input Component.Camera camera {"hint":"Scene camera, used to tell when the next corner is out of view"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float shopMinDefault = 7.5 {"hint":"Starting shop minimum for front/back rails (cm); a sample shop rule", "widget":"slider", "min":5, "max":10, "step":0.1}'
+    - '// @input float centerTolerance = 0.2 {"hint":"Left and right count as centred within this difference (cm)", "widget":"slider", "min":0.05, "max":1, "step":0.05}'
+    - '// @input bool debugLog {"hint":"Print state changes to the log"}'
+    - '// @ui {"widget":"group_end"}'

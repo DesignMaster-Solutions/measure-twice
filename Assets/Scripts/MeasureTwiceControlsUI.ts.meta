@@ -1,0 +1,68 @@
+- !<AssetImportMetadata/82cbf75d-17d2-4c36-9ecf-aa5a3a5cc5df>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> db75b421-0d07-48cb-a22c-c14f3b1de337
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> db75b421-0d07-48cb-a22c-c14f3b1de337
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d6b60d07-3bee-4a27-aad7-3be6bd5c6a16
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d6b60d07-3bee-4a27-aad7-3be6bd5c6a16>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 5de63ccd-0348-405d-87d9-c6df4ed15f8d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    buttonHeight: false
+    buttonWidth: false
+    labelSize: false
+    shopMinHigh: false
+    shopMinLow: false
+    slabButtonWidth: false
+    sliderWidth: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - buttonWidth: !<float> 12.000000
+      buttonHeight: !<float> 6.000000
+      slabButtonWidth: !<float> 30.000000
+      sliderWidth: !<float> 25.000000
+      shopMinLow: !<float> 5.000000
+      shopMinHigh: !<float> 10.000000
+      labelSize: !<float> 60.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MeasureTwiceControlsUI – buttons and slider on the stand edge</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float buttonWidth = 12 {"hint":"Width of Center / Lock / Marked buttons (cm)", "widget":"slider", "min":8, "max":20, "step":0.5}'
+    - '// @input float buttonHeight = 6 {"hint":"Height of the stand-edge buttons (cm)", "widget":"slider", "min":4, "max":10, "step":0.5}'
+    - "// @input float slabButtonWidth = 30 {\"hint\":\"Width of the 'Slab is here' button (cm)\", \"widget\":\"slider\", \"min\":15, \"max\":40, \"step\":1}"
+    - '// @input float sliderWidth = 25 {"hint":"Shop minimum slider width (cm)", "widget":"slider", "min":15, "max":40, "step":1}'
+    - '// @input float shopMinLow = 5 {"hint":"Shop minimum range, low end (cm)"}'
+    - '// @input float shopMinHigh = 10 {"hint":"Shop minimum range, high end (cm)"}'
+    - '// @input float labelSize = 60 {"hint":"Button label text size", "widget":"slider", "min":30, "max":100, "step":1}'
+    - '// @ui {"widget":"group_end"}'

@@ -1,0 +1,80 @@
+- !<AssetImportMetadata/b7176147-c846-4741-b5c5-72d0f1abcec6>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 659d884c-708d-4e48-b09f-940e699a6d33
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 659d884c-708d-4e48-b09f-940e699a6d33
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 51be8344-6bac-4e90-97f9-895d190296f6
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/51be8344-6bac-4e90-97f9-895d190296f6>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 08f0bdd1-239d-4180-a159-035dbb48e653
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    amberColor: false
+    centeredColor: false
+    chimeAudio: false
+    labelSize: false
+    lineMaterial: false
+    lineWidth: false
+    markerDiameter: false
+    outlineColor: false
+    summarySize: false
+    tickAudio: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - lineMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      tickAudio: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      chimeAudio: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      outlineColor: !<Vec4> {x: 0.200000, y: 0.900000, z: 1.000000, w: 1.000000}
+      amberColor: !<Vec4> {x: 1.000000, y: 0.680000, z: 0.120000, w: 1.000000}
+      centeredColor: !<Vec4> {x: 0.450000, y: 1.000000, z: 0.550000, w: 1.000000}
+      lineWidth: 0.600000
+      labelSize: !<float> 96.000000
+      summarySize: !<float> 58.000000
+      markerDiameter: !<float> 3.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">MeasureTwiceStoneUI – outline, rails and marks on the stone</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input Asset.Material lineMaterial {"hint":"Unlit material cloned for every line and fill colour"}'
+    - '// @input Asset.AudioTrackAsset tickAudio {"hint":"Short tick played from the next corner when it is out of view"}'
+    - '// @input Asset.AudioTrackAsset chimeAudio {"hint":"Soft chime played when the summary appears"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input vec4 outlineColor = "{0.2, 0.9, 1.0, 1}" {"hint":"Cutout outline colour", "widget":"color"}'
+    - '// @input vec4 amberColor = "{1.0, 0.68, 0.12, 1}" {"hint":"Rail below the shop minimum (number and filled rail)", "widget":"color"}'
+    - '// @input vec4 centeredColor = "{0.45, 1.0, 0.55, 1}" {"hint":"Left/right numbers when centred", "widget":"color"}'
+    - '// @input float lineWidth = 0.6 {"hint":"Outline line width in cm", "widget":"slider", "min":0.2, "max":1.5, "step":0.1}'
+    - '// @input float labelSize = 150 {"hint":"Rail number text size while positioning (halved while tracing)", "widget":"slider", "min":60, "max":240, "step":1}'
+    - '// @input float summarySize = 80 {"hint":"Summary text size", "widget":"slider", "min":30, "max":120, "step":1}'
+    - '// @input float markerDiameter = 3 {"hint":"Corner marker diameter in cm", "widget":"slider", "min":1, "max":6, "step":0.5}'
+    - '// @ui {"widget":"group_end"}'
