@@ -1,0 +1,5 @@
+# Agent tooling (plan-lens skill install), not part of the Lens
+.agents/
+.claude/
+agent/
+.DS_Store
