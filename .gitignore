@@ -49,3 +49,6 @@ agent/
 
 # Added by Lens Studio (LEAF plugin)
 leaf_plugin_settings.json
+
+# Preview frames behind docs/video/clips (572 MB); the clips are committed
+docs/video/frames/

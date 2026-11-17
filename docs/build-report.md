@@ -43,7 +43,7 @@ dc8 uses the LEAF IK body (shoulder 37 cm below and 20 cm beside the eye, 67.5 c
 
 ## Demo video (preview only)
 
-`docs/video/demo.mp4` (2:33, 1080p) is built by `demo_slides.py` from `docs/video/demo.json`: 8 Interactive Preview frames (`docs/video/01-08*.png`, each taken right after the LEAF run that reaches that state, same camera as the prints), narration by the macOS `say` voice, and the LEAF pass list read live from `docs/leaf-run.log`. Nothing in it comes from Spectacles hardware.
+`docs/video/demo.mp4` (2:20, 1080p) is a screen recording of the lens running in the Lens Studio Interactive Preview, built by `demo_slides.py` from `docs/video/demo.json`. Scenes 2 to 9 are clips (`docs/video/clips/`, built by `docs/video/clips.py`) from real grabs of the Preview panel, taken through the Lens Studio MCP (`ExecuteEditorCode` running `docs/video/capture_preview.ts`) while LEAF dc1 to dc7 ran, plus the idle start state. The capture got 10.7 to 15.2 frames per second; each frame is shown for its real interval and the clips play at 1.0x, with no interpolated frames. Camera behind and above the user, cropped to the slab. The frames and their capture times stay local in `docs/video/frames/` (572 MB, not in git). Narration by the macOS `say` voice; the LEAF pass list is read live from `docs/leaf-run.log`. Nothing in it comes from Spectacles hardware.
 
 ## Prints (Interactive Preview, after each LEAF run, on the 60 cm layout)
 
