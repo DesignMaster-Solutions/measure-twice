@@ -22,3 +22,21 @@
 [DefaultLeafScenarioManager] [  3.969s]PASSED: dc5-slider-turns-amber
 [DefaultLeafScenarioManager] [  8.477s]PASSED: dc6-lock-marker-steps
 [DefaultLeafScenarioManager] [  6.991s]PASSED: dc7-summary-locked-values
+# 2026-11-17 dc8 IK reach: red on the original layout (slab 80 cm out, controls on the stand face)
+[DefaultLeafScenarioManager] [  1.734s]FAILED: dc8-ik-arm-reaches-controls - Error: [IK right (direct)] trigger "SlabHereButton": wrist target 75.2cm from shoulder; IK clamps at 67.5cm (7.7cm short). Forward 45.6cm, up -52.7cm, lateral -28.2cm.
+# slab moved to 60 cm; then Lock (x=50, then x=42) and the slider (x=-44.5) still out of reach
+[DefaultLeafScenarioManager] [ 35.681s]FAILED: dc8-ik-arm-reaches-controls - Error: [IK right (direct)] trigger "LockButton": wrist target 69.6cm from shoulder; IK clamps at 67.5cm (2.1cm short). Forward 45.5cm, up 21.2cm, lateral -1.6cm.
+[DefaultLeafScenarioManager] [ 50.856s]FAILED: dc8-ik-arm-reaches-controls - Error: LockButton: right pinch did not land within 15 s (closest 3.9 cm)
+[DefaultLeafScenarioManager] [ 35.748s]FAILED: dc8-ik-arm-reaches-controls - Error: ShopMinSlider: left pinch did not land within 15 s (closest 1.8 cm)
+# controls row from x=-4 (Lock 34), slider centered at x=-34: green
+[DefaultLeafScenarioManager] [ 59.538s]PASSED: dc8-ik-arm-reaches-controls
+# same final test with the slab put back at 80 cm: red again (then restored to 60 cm)
+[DefaultLeafScenarioManager] [  1.807s]FAILED: dc8-ik-arm-reaches-controls - Error: [IK right (direct)] trigger "SlabHereButton": wrist target 75.2cm from shoulder; IK clamps at 67.5cm (7.7cm short). Forward 45.6cm, up -52.7cm, lateral -28.2cm.
+# dc1-dc7 re-run on the new layout
+[DefaultLeafScenarioManager] [  2.413s]PASSED: dc1-slab-here-shows-cards
+[DefaultLeafScenarioManager] [  3.757s]PASSED: dc2-card-lays-outline
+[DefaultLeafScenarioManager] [  6.371s]PASSED: dc3-drag-front-amber-lock-blocked
+[DefaultLeafScenarioManager] [  4.614s]PASSED: dc4-center-equal-green
+[DefaultLeafScenarioManager] [  5.176s]PASSED: dc5-slider-turns-amber
+[DefaultLeafScenarioManager] [  7.870s]PASSED: dc6-lock-marker-steps
+[DefaultLeafScenarioManager] [  7.407s]PASSED: dc7-summary-locked-values

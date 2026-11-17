@@ -7,6 +7,7 @@ import {Dc4CenterEqualGreen} from "./Dc4CenterEqualGreen"
 import {Dc5SliderTurnsAmber} from "./Dc5SliderTurnsAmber"
 import {Dc6LockMarkerSteps} from "./Dc6LockMarkerSteps"
 import {Dc7SummaryLockedValues} from "./Dc7SummaryLockedValues"
+import {Dc8ArmReachesControls} from "./Dc8ArmReachesControls"
 
 @component
 export class LeafIndex extends BaseScriptComponent {
@@ -19,5 +20,6 @@ export class LeafIndex extends BaseScriptComponent {
     {id: "dc5-slider-turns-amber", typename: Dc5SliderTurnsAmber.getTypeName()},
     {id: "dc6-lock-marker-steps", typename: Dc6LockMarkerSteps.getTypeName()},
     {id: "dc7-summary-locked-values", typename: Dc7SummaryLockedValues.getTypeName()},
+    {id: "dc8-ik-arm-reaches-controls", typename: Dc8ArmReachesControls.getTypeName()},
   ]
 }

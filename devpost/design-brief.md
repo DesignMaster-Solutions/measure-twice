@@ -16,7 +16,7 @@ I'm at the shop table with a vanity top blank in front of me, pencil in one hand
 ## Product or overlay
 - Type: overlay: it responds to a real slab on a work table.
 - What the real version would sense: the top surface and outline of the slab.
-- Stand-in for the preview: a virtual vanity top blank at real size (122 x 56 cm, 3 cm thick, light warm-white stone) lying on a simple work stand 90 cm high (default), 0.8 m in front of the user, with one big "Slab is here" button on its front edge that marks it as found. Everything after that is real logic.
+- Stand-in for the preview: a virtual vanity top blank at real size (122 x 56 cm, 3 cm thick, light warm-white stone) lying on a simple work stand 90 cm high (default), 0.6 m in front of the user (moved from 0.8 m: the LEAF IK reach test showed the controls were out of reach), with one big "Slab is here" button on its front edge that marks it as found. Everything after that is real logic.
 
 ## Where things live
 - Where the user is looking during the main task: down at the slab, about 0.8 m ahead and 0.7 m below eye level.

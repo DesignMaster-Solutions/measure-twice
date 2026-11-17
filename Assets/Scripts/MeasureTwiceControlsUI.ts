@@ -87,8 +87,8 @@ export class MeasureTwiceControlsUI extends BaseScriptComponent {
     const h = this.buttonHeight
     this.slabHere = this.addButton("SlabHereButton", "Slab is here", this.slabButtonWidth, h + 1, 0, () => this._onSlabHere.invoke())
 
-    // Right zone: Change sink | Center | Lock, spaced by rowLayout from x = 12.
-    const right = this.rowLayout(12, [w + 4, w, w], 2)
+    // Right zone: Change sink | Center | Lock, spaced by rowLayout from x = -4 (keeps Lock inside arm reach, LEAF dc8).
+    const right = this.rowLayout(-4, [w + 4, w, w], 2)
     this.changeSink = this.addButton("ChangeSinkButton", "Change sink", w + 4, h, right[0], () => this._onChangeSink.invoke())
     this.center = this.addButton("CenterButton", "Center", w, h, right[1], () => this._onCenter.invoke())
     this.lock = this.addButton("LockButton", "Lock", w, h, right[2], () => this._onLockToggle.invoke())
@@ -97,7 +97,7 @@ export class MeasureTwiceControlsUI extends BaseScriptComponent {
     this.newLayout = this.addButton("NewLayoutButton", "New layout", w + 4, h, right[1], () => this._onNewLayout.invoke())
 
     // Left zone: shop minimum slider with its label above it.
-    const sx = -61 + this.sliderWidth / 2 + 4
+    const sx = -34 // mirrors Lock at x = 34: inside left-arm reach (LEAF dc8)
     this.sliderRoot = global.scene.createSceneObject("ShopMinGroup")
     this.sliderRoot.setParent(this.sceneObject)
     this.sliderRoot.getTransform().setLocalPosition(new vec3(sx, 0, 0))
