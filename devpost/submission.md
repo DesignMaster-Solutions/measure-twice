@@ -42,5 +42,5 @@ Lens Studio, TypeScript, Spectacles Interaction Kit, UI Kit, LEAF, CLAD agents, 
 
 ## Links
 - Code: https://github.com/DesignMaster-Solutions/measure-twice
-- Video (2:20, screen recording of the lens in the Lens Studio preview, `docs/video/demo.mp4`): new YouTube link pending upload; the earlier 2:33 slide version is https://youtu.be/1rGBfxzXpZc
+- Video (2:20, screen recording of the lens in the Lens Studio preview): https://youtu.be/jf1re9I3ApQ
 - Devpost: https://devpost.com/software/measure-twice
