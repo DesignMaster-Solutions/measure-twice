@@ -1,3 +1,20 @@
+[DefaultLeafScenarioManager] [  2.674s]PASSED: dc1-slab-here-shows-cards
+[DefaultLeafScenarioManager] [  3.577s]PASSED: dc2-card-lays-outline
+[DefaultLeafScenarioManager] [  6.153s]PASSED: dc3-drag-front-amber-lock-blocked
+[DefaultLeafScenarioManager] [  4.343s]PASSED: dc4-center-equal-green
+[DefaultLeafScenarioManager] [  3.921s]PASSED: dc5-slider-turns-amber
+[DefaultLeafScenarioManager] [  7.431s]PASSED: dc6-lock-marker-steps
+[DefaultLeafScenarioManager] [  6.642s]PASSED: dc7-summary-locked-values
+[DefaultLeafScenarioManager] [  3.998s]FAILED: dc5-slider-turns-amber - AssertionError: Expected: "7.5" - Received: "10"
+[DefaultLeafScenarioManager] [  3.886s]PASSED: dc5-slider-turns-amber
+[DefaultLeafScenarioManager] [  2.133s]PASSED: dc1-slab-here-shows-cards
+[DefaultLeafScenarioManager] [  3.642s]PASSED: dc2-card-lays-outline
+[DefaultLeafScenarioManager] [  6.162s]PASSED: dc3-drag-front-amber-lock-blocked
+[DefaultLeafScenarioManager] [  4.299s]PASSED: dc4-center-equal-green
+[DefaultLeafScenarioManager] [  3.947s]PASSED: dc5-slider-turns-amber
+[DefaultLeafScenarioManager] [  7.451s]PASSED: dc6-lock-marker-steps
+[DefaultLeafScenarioManager] [  6.894s]PASSED: dc7-summary-locked-values
+# 2026-11-17 re-run after BACK_LABEL_SHIFT (5ad19b8)
 [DefaultLeafScenarioManager] [  2.130s]PASSED: dc1-slab-here-shows-cards
 [DefaultLeafScenarioManager] [  3.850s]PASSED: dc2-card-lays-outline
 [DefaultLeafScenarioManager] [  6.264s]PASSED: dc3-drag-front-amber-lock-blocked
