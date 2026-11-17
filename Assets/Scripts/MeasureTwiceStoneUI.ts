@@ -8,7 +8,7 @@
 import Event, {PublicApi} from "SpectaclesInteractionKit.lspkg/Utils/Event"
 import {Interactable} from "SpectaclesInteractionKit.lspkg/Components/Interaction/Interactable/Interactable"
 import {InteractorEvent} from "SpectaclesInteractionKit.lspkg/Core/Interactor/InteractorEvent"
-import {fmt, outlinePoints, Point2, Rails, Sink, SLAB_D, SLAB_W, faucetOffset, FAUCET_DIAMETER} from "./MeasureTwiceLayout"
+import {fmt, outlinePoints, Point2, Rails, Sink, SLAB_D, SLAB_W, faucetOffset, FAUCET_DIAMETER, BACK_LABEL_SHIFT} from "./MeasureTwiceLayout"
 import {FlatMesh, meshObject, tintedMaterial} from "./MeasureTwiceMesh"
 
 export interface StoneView {
@@ -185,7 +185,7 @@ export class MeasureTwiceStoneUI extends BaseScriptComponent {
     const size = v.tracing ? this.labelSize / 2 : this.labelSize
     const off = size / 22 // keeps labels clear of the dimension line at any size
     this.setLabel("Front", v.x + off, (front + D) / 2, `${fmt(v.rails.front)} cm`, v.amber.front, false, size)
-    this.setLabel("Back", v.x + off, (back - D) / 2, `${fmt(v.rails.back)} cm`, v.amber.back, false, size)
+    this.setLabel("Back", v.x + off + BACK_LABEL_SHIFT, (back - D) / 2, `${fmt(v.rails.back)} cm`, v.amber.back, false, size)
     const lr = (n: number) => (v.centered ? `${fmt(n)} cm centered` : `${fmt(n)} cm`)
     this.setLabel("Left", (left - E) / 2, v.z - size / 50, lr(v.rails.left), v.amber.left, v.centered, size)
     this.setLabel("Right", (right + E) / 2, v.z - size / 50, lr(v.rails.right), v.amber.right, v.centered, size)

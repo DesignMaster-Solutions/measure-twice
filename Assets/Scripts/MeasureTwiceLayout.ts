@@ -26,6 +26,8 @@ export const SLAB_D = 56
 export const SLAB_T = 3
 export const FAUCET_DIAMETER = 3.5
 export const FAUCET_GAP = 5 // gap between cutout back edge and faucet hole edge
+/** Extra x offset for the back rail label: the faucet hole sits on the back dimension line, mid-rail. */
+export const BACK_LABEL_SHIFT = FAUCET_DIAMETER / 2 + 1
 
 export interface Rails {
   front: number
