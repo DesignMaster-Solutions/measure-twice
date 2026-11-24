@@ -1,6 +1,6 @@
 {
   "brand": "Measure Twice · Lens Studio Interactive Preview (SPECS 27, Sunlit Room)",
-  "voice": "Samantha",
+  "voice": "alan",
   "rate": 180,
   "bg": "#151b22",
   "accent": "#4fe3f0",
@@ -9,17 +9,16 @@
     {
       "title": "Measure Twice",
       "lines": [
-        "Lay out a sink cutout on the stone, at real size.",
-        "Lens Studio 5.24.1, Spectacles Interaction Kit 3.1.0,",
-        "UI Kit, LEAF 3.0.0.",
-        "Screen recording of the Lens Studio preview.",
-        "Not tried on Spectacles glasses yet."
+        "A sink cutout, laid out on the stone at real size.",
+        "Built in Lens Studio 5.24.1 with SIK, UI Kit and LEAF.",
+        "Recorded from the Lens Studio preview.",
+        "Not on real glasses yet."
       ],
-      "say": "This is Measure Twice, a Spectacles lens I built for marking a sink cutout on a vanity top. Everything in this video is a screen recording of the lens running in the Lens Studio Interactive Preview. I have not run it on Spectacles glasses yet."
+      "say": "Hi, I'm Alan. I run a marketplace for countertop shops, and this is Measure Twice, a Spectacles lens for laying out a sink cutout on the stone. Quick heads up: all of this is the Lens Studio preview. I haven't had it on real glasses yet."
     },
     {
       "title": "Slab is here",
-      "say": "In the preview, a virtual stand-in plays the slab: a 122 by 56 centimeter top, 3 centimeters thick, on a 90 centimeter stand. At the start the only thing shown is one button, Slab is here.",
+      "say": "The gray block stands in for the slab. It's a vanity top, a hundred and twenty two by fifty six centimeters, on a stand. When you start, there's just one button. Slab is here.",
       "rec": "frames/02-slab-is-here",
       "rec_from": 1.0,
       "rec_leaf": "start state, no LEAF input",
@@ -29,7 +28,7 @@
     },
     {
       "title": "Pick a sink",
-      "say": "Pinching it shows three sink cards along the back edge, tilted toward me. Each card has the name, an outline drawn at a shared scale, and the size in centimeters and inches.",
+      "say": "Pinch it, and three sinks show up along the back edge, tipped toward you, with their size in centimeters and inches.",
       "rec": "frames/03-sink-cards",
       "rec_from": 1.0,
       "rec_leaf": "LEAF dc1",
@@ -39,7 +38,7 @@
     },
     {
       "title": "The cutout, at real size",
-      "say": "Pinching a card lays that cutout flat on the slab at real size, with a center cross and a three and a half centimeter faucet hole five centimeters behind it. Four numbers on the stone give the distance to each edge, each with a dimension line.",
+      "say": "Pick one, and the cutout drops onto the stone at real size, with the faucet hole behind it. The four numbers are the distance to each edge, right where you'd hold the tape.",
       "rec": "frames/04-template",
       "rec_from": 2.8,
       "rec_leaf": "LEAF dc2",
@@ -49,7 +48,7 @@
     },
     {
       "title": "Too thin turns amber",
-      "say": "I drag the outline toward the front. Below the shop minimum, the front number turns amber and the rail fills amber on the stone. While the front or back rail is amber, Lock is dimmed and does nothing.",
+      "say": "Now I slide it toward the front. Once that rail gets thinner than the shop allows, it turns amber, and Lock won't let me commit. A thin front rail is how a top cracks, so the lens just won't let it through.",
       "rec": "frames/05-amber",
       "rec_from": 3.6,
       "rec_leaf": "LEAF dc3",
@@ -59,7 +58,7 @@
     },
     {
       "title": "Center",
-      "say": "Center makes left and right equal. When they match within two millimeters, both turn green and read centered.",
+      "say": "Center splits left and right evenly. When they match within two millimeters, both go green.",
       "rec": "frames/06-center",
       "rec_from": 11.0,
       "rec_leaf": "LEAF dc4",
@@ -69,7 +68,7 @@
     },
     {
       "title": "Shop minimum",
-      "say": "The shop minimum slider goes from five to ten centimeters and starts at seven and a half. Moving it to ten turns the nine centimeter front rail amber. The outline does not move.",
+      "say": "Every shop has its own minimum, so there's a slider from five to ten centimeters. Bump it to ten, and the nine centimeter rail goes amber. The outline stays where it was.",
       "rec": "frames/07-slider",
       "rec_from": 3.0,
       "rec_leaf": "LEAF dc5",
@@ -79,7 +78,7 @@
     },
     {
       "title": "Lock and trace",
-      "say": "Lock freezes the outline, and the same button becomes Unlock. A pulsing marker steps through the four corners and then the faucet hole, one step per Marked. While I trace, the numbers shrink to half size.",
+      "say": "Hit Lock, and a pulsing dot walks you around. Four corners, then the faucet hole, one pencil mark each time you tap Marked. The numbers shrink so they stay out of your way.",
       "rec": "frames/08-lock-marker",
       "rec_from": 3.3,
       "rec_leaf": "LEAF dc6",
@@ -89,7 +88,7 @@
     },
     {
       "title": "Summary",
-      "say": "After the fifth mark, a summary line appears inside the outline with the values from lock time, a soft chime plays, and New layout starts over.",
+      "say": "After the last mark, you get a summary of the layout, a little chime, and New layout to start the next one.",
       "rec": "frames/09-summary",
       "rec_from": 10.0,
       "rec_leaf": "LEAF dc7",
@@ -101,18 +100,19 @@
       "title": "Tested with LEAF in the preview",
       "mono_cmd": "grep -oE 'PASSED: dc[0-9a-z-]+' leaf-run.log | tail -8",
       "mono_cwd": "..",
-      "say": "Eight LEAF scenarios drive the lens with real Spectacles Interaction Kit input, and all eight pass in the preview. The reach scenario uses an inverse kinematics arm. It failed on my first layout, so I moved the slab closer and pulled the controls in until each one was within reach."
+      "say": "I test it with LEAF, which drives the lens with real hand input. All eight scenarios pass. The reach test failed the first time, my buttons were too far away, so I moved the slab closer until every control was within arm's reach."
     },
     {
       "title": "Not proven yet",
       "lines": [
-        "Registration and drift on a real slab.",
-        "Lines and numbers on polished stone",
+        "How it holds up on a real slab.",
+        "How the lines read on polished stone",
         "under shop lights.",
-        "Voice for \"marked\" (a button here).",
+        "Saying \"marked\" out loud instead of a button.",
         "Pressing the near buttons by touch with the IK hand."
       ],
-      "say": "What I have not proven yet: how it holds on a real slab, how the lines read on polished stone under shop lights, voice for marked, which is a button here, and a touch press on the near buttons by the simulated hand. Thanks for watching."
+      "say": "What I still need to prove: how it holds up on a real slab, how the lines read on polished stone under shop lights, and saying marked out loud instead of pressing a button. Thanks for watching."
     }
-  ]
+  ],
+  "lang": "en"
 }

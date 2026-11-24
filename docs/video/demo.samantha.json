@@ -1,0 +1,118 @@
+{
+  "brand": "Measure Twice · Lens Studio Interactive Preview (SPECS 27, Sunlit Room)",
+  "voice": "Samantha",
+  "rate": 180,
+  "bg": "#151b22",
+  "accent": "#4fe3f0",
+  "out": "demo.mp4",
+  "scenes": [
+    {
+      "title": "Measure Twice",
+      "lines": [
+        "Lay out a sink cutout on the stone, at real size.",
+        "Lens Studio 5.24.1, Spectacles Interaction Kit 3.1.0,",
+        "UI Kit, LEAF 3.0.0.",
+        "Screen recording of the Lens Studio preview.",
+        "Not tried on Spectacles glasses yet."
+      ],
+      "say": "This is Measure Twice, a Spectacles lens I built for marking a sink cutout on a vanity top. Everything in this video is a screen recording of the lens running in the Lens Studio Interactive Preview. I have not run it on Spectacles glasses yet."
+    },
+    {
+      "title": "Slab is here",
+      "say": "In the preview, a virtual stand-in plays the slab: a 122 by 56 centimeter top, 3 centimeters thick, on a 90 centimeter stand. At the start the only thing shown is one button, Slab is here.",
+      "rec": "frames/02-slab-is-here",
+      "rec_from": 1.0,
+      "rec_leaf": "start state, no LEAF input",
+      "rec_note": "Stand-in: 122 x 56 x 3 cm top on a 90 cm stand, 60 cm in front of me.",
+      "clip": "clips/02-slab-is-here.mp4",
+      "clip_y": 0
+    },
+    {
+      "title": "Pick a sink",
+      "say": "Pinching it shows three sink cards along the back edge, tilted toward me. Each card has the name, an outline drawn at a shared scale, and the size in centimeters and inches.",
+      "rec": "frames/03-sink-cards",
+      "rec_from": 1.0,
+      "rec_leaf": "LEAF dc1",
+      "rec_note": "Three cards on the back edge. Outline at a shared scale, size in cm and inches.",
+      "clip": "clips/03-sink-cards.mp4",
+      "clip_y": 0
+    },
+    {
+      "title": "The cutout, at real size",
+      "say": "Pinching a card lays that cutout flat on the slab at real size, with a center cross and a three and a half centimeter faucet hole five centimeters behind it. Four numbers on the stone give the distance to each edge, each with a dimension line.",
+      "rec": "frames/04-template",
+      "rec_from": 2.8,
+      "rec_leaf": "LEAF dc2",
+      "rec_note": "Cyan outline, center cross, 3.5 cm faucet hole 5 cm behind. Four distances on the stone.",
+      "clip": "clips/04-template.mp4",
+      "clip_y": 0
+    },
+    {
+      "title": "Too thin turns amber",
+      "say": "I drag the outline toward the front. Below the shop minimum, the front number turns amber and the rail fills amber on the stone. While the front or back rail is amber, Lock is dimmed and does nothing.",
+      "rec": "frames/05-amber",
+      "rec_from": 3.6,
+      "rec_leaf": "LEAF dc3",
+      "rec_note": "Front rail 6.0 cm, below the 7.5 cm minimum. Lock is dimmed and off.",
+      "clip": "clips/05-amber.mp4",
+      "clip_y": 0
+    },
+    {
+      "title": "Center",
+      "say": "Center makes left and right equal. When they match within two millimeters, both turn green and read centered.",
+      "rec": "frames/06-center",
+      "rec_from": 11.0,
+      "rec_leaf": "LEAF dc4",
+      "rec_note": "Left and right made equal. Green and \"centered\" within 0.2 cm.",
+      "clip": "clips/06-center.mp4",
+      "clip_y": 0
+    },
+    {
+      "title": "Shop minimum",
+      "say": "The shop minimum slider goes from five to ten centimeters and starts at seven and a half. Moving it to ten turns the nine centimeter front rail amber. The outline does not move.",
+      "rec": "frames/07-slider",
+      "rec_from": 3.0,
+      "rec_leaf": "LEAF dc5",
+      "rec_note": "Slider from 5 to 10 cm, starts at 7.5. Recolors the rails, the outline stays put.",
+      "clip": "clips/07-slider.mp4",
+      "clip_y": 0
+    },
+    {
+      "title": "Lock and trace",
+      "say": "Lock freezes the outline, and the same button becomes Unlock. A pulsing marker steps through the four corners and then the faucet hole, one step per Marked. While I trace, the numbers shrink to half size.",
+      "rec": "frames/08-lock-marker",
+      "rec_from": 3.3,
+      "rec_leaf": "LEAF dc6",
+      "rec_note": "Pulsing marker: 4 corners, then the faucet hole, one step per Marked. Numbers at half size.",
+      "clip": "clips/08-lock-marker.mp4",
+      "clip_y": 0
+    },
+    {
+      "title": "Summary",
+      "say": "After the fifth mark, a summary line appears inside the outline with the values from lock time, a soft chime plays, and New layout starts over.",
+      "rec": "frames/09-summary",
+      "rec_from": 10.0,
+      "rec_leaf": "LEAF dc7",
+      "rec_note": "Values from lock time, a soft chime, New layout starts over.",
+      "clip": "clips/09-summary.mp4",
+      "clip_y": 0
+    },
+    {
+      "title": "Tested with LEAF in the preview",
+      "mono_cmd": "grep -oE 'PASSED: dc[0-9a-z-]+' leaf-run.log | tail -8",
+      "mono_cwd": "..",
+      "say": "Eight LEAF scenarios drive the lens with real Spectacles Interaction Kit input, and all eight pass in the preview. The reach scenario uses an inverse kinematics arm. It failed on my first layout, so I moved the slab closer and pulled the controls in until each one was within reach."
+    },
+    {
+      "title": "Not proven yet",
+      "lines": [
+        "Registration and drift on a real slab.",
+        "Lines and numbers on polished stone",
+        "under shop lights.",
+        "Voice for \"marked\" (a button here).",
+        "Pressing the near buttons by touch with the IK hand."
+      ],
+      "say": "What I have not proven yet: how it holds on a real slab, how the lines read on polished stone under shop lights, voice for marked, which is a button here, and a touch press on the near buttons by the simulated hand. Thanks for watching."
+    }
+  ]
+}

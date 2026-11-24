@@ -9,7 +9,7 @@ demo_slides plays the clip at 1.0x.
 
 Usage: python3 docs/video/clips.py   (then demo_slides.py docs/video/demo.json)
 """
-import json, pathlib, subprocess, tempfile
+import json, os, pathlib, subprocess, sys, tempfile
 from PIL import Image, ImageDraw, ImageFont
 
 BASE = pathlib.Path(__file__).resolve().parent
@@ -21,8 +21,9 @@ CW, CH, CX, CY = 1536, 830, 192, 190
 
 def narration_len(cfg, sc, tmp):
     aiff = tmp / "n.aiff"
-    subprocess.run(["say", "-v", cfg.get("voice", "Samantha"), "-r", str(cfg.get("rate", 186)), "-o", str(aiff),
-                    sc["say"]], check=True)
+    sys.path.insert(0, os.path.expanduser("~/Dev/clauditor/skills/video-editing/scripts"))
+    from demo_slides import narrate  # same voice (and cache) as the final render
+    narrate(cfg, sc["say"], aiff)
     return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of",
                                           "csv=p=0", str(aiff)], text=True)) + 0.6
 
