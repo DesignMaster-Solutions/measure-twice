@@ -4,11 +4,8 @@ studioVersion:
   patch: 1
   build: 26112106
   type: Public
-  buildFlavor: release
-  timestamp: 1795238571000
-  commit: 91a7634be5a03c06d2af0cf560bfbf3f38aa9c3e
-coreVersion: 377
-clientVersion: 14.21
+coreVersion: 387
+clientVersion: 14.31
 updateCheckpoint: 111
 sceneId: 0a1ccb1a-fe88-4fbb-9883-e3af3c75fd99
 metaInfo:
