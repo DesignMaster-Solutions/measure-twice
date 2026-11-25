@@ -16,7 +16,7 @@ Stone fabricators and installers laying out an undermount sink cutout on a vanit
 
 ## Open it
 
-1. Install Lens Studio. The project was built and tested on Lens Studio 5.24.1; the packages it uses (Spectacles Interaction Kit 3.1.0, UI Kit, Leaf 3.0.0) are committed in `Packages/`, so nothing has to be downloaded. It has not been re-tested on 5.25.
+1. Install Lens Studio 5.25.1. The project was built and tested on 5.24.1 and on 25 Nov 2026 updated to 5.25.1 with Lens Studio's own "Update and Open" (it rewrote the project file, the bundled packages and one render target setting; no script or scene changed): it compiles, the Interactive Preview starts and the LEAF scenario manager loads. The packages are committed in `Packages/`, so nothing has to be downloaded. On Lens Studio 5.24.1, check out the tag `ls-5.24.1` instead.
 2. Clone this repo and open `MeasureTwice.esproj`.
 3. In the Preview panel, pick Interactive Preview with the SPECS device. Click "Slab is here", pick a sink card, drag the outline, then try "Center", the shop minimum slider and "Lock". Clicking acts as a pinch.
 
